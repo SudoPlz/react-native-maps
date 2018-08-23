@@ -4,6 +4,8 @@
 //  Created by Taro Matsuzawa on 5/3/17.
 //
 
+#ifdef HAVE_GOOGLE_MAPS
+
 #import <Foundation/Foundation.h>
 #import <GoogleMaps/GoogleMaps.h>
 #if __has_include(<React/RCTBridge.h>)
@@ -25,3 +27,5 @@
 @property (nonatomic, weak) RCTBridge *bridge;
 
 @end
+
+#endif

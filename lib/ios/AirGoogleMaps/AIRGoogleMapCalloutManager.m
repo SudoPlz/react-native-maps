@@ -6,6 +6,8 @@
 //
 //
 
+#ifdef HAVE_GOOGLE_MAPS
+
 #import "AIRGoogleMapCalloutManager.h"
 #import "AIRGoogleMapCallout.h"
 #if __has_include(<React/RCTView.h>)
@@ -27,3 +29,5 @@ RCT_EXPORT_VIEW_PROPERTY(tooltip, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock)
 
 @end
+
+#endif

@@ -6,6 +6,8 @@
 //
 //
 
+#ifdef HAVE_GOOGLE_MAPS
+
 #import <UIKit/UIKit.h>
 #if __has_include(<React/RCTView.h>)
     #import <React/RCTView.h>
@@ -17,3 +19,5 @@
 @property (nonatomic, assign) BOOL tooltip;
 @property (nonatomic, copy) RCTBubblingEventBlock onPress;
 @end
+
+#endif

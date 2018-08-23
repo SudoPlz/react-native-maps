@@ -5,6 +5,8 @@
 //  Created by Gerardo Pacheco 02/05/2017.
 //
 
+#ifdef HAVE_GOOGLE_MAPS
+
 #import <GoogleMaps/GoogleMaps.h>
 #if __has_include(<React/UIView+React.h>)
     #import <React/UIView+React.h>
@@ -18,3 +20,5 @@
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, copy) RCTBubblingEventBlock onPress;
 @end
+
+#endif

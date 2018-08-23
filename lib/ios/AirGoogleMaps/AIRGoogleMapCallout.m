@@ -6,6 +6,8 @@
 //
 //
 
+#ifdef HAVE_GOOGLE_MAPS
+
 #import "AIRGoogleMapCallout.h"
 #if __has_include(<React/RCTUtils.h>)
     #import <React/RCTUtils.h>
@@ -25,3 +27,5 @@
 
 @implementation AIRGoogleMapCallout
 @end
+
+#endif
