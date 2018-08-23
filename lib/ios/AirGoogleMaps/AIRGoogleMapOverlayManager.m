@@ -1,3 +1,5 @@
+#ifdef HAVE_GOOGLE_MAPS
+
 #import "AIRGoogleMapOverlayManager.h"
 #import "AIRGoogleMapOverlay.h"
 
@@ -20,3 +22,5 @@ RCT_REMAP_VIEW_PROPERTY(bounds, boundsRect, NSArray)
 RCT_REMAP_VIEW_PROPERTY(image, imageSrc, NSString)
 
 @end
+
+#endif
